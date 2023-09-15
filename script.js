@@ -1,6 +1,7 @@
 // let httpRequest;
 const httpRequest = new XMLHttpRequest();
-const url = 'https://books-api-rz6d.onrender.com/books';
+const url =
+  'https://raw.githubusercontent.com/Punithify/punithify.github.io/main/Data/books.json';
 document.getElementById('ajaxButton').addEventListener('click', () => {
   makeRequest(url);
 });
@@ -8,8 +9,6 @@ document.getElementById('ajaxButton').addEventListener('click', () => {
 function makeRequest(url) {
   httpRequest.onreadystatechange = alertContents;
   httpRequest.open('GET', url, true);
-  httpRequest.setRequestHeader('Access-Control-Allow-Origin', '*');
-  httpRequest.setRequestHeader('Content-type', 'application/json');
   httpRequest.send();
 }
 
