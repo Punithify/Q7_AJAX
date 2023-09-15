@@ -1,3 +1,3 @@
 # Lab Ex.7
 
-books api link - https://books-api-rz6d.onrender.com/books
+books api link - (https://raw.githubusercontent.com/Punithify/punithify.github.io/main/Data/books.json)
