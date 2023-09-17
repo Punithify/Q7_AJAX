@@ -17,15 +17,18 @@
     <title>Books Wiki | Home</title>
   </head>
   <body>
-    <div class="d-flex flex-row justify-content-evenly bd-highlight mb-3 mt-4">
+    <div class="d-flex flex-row justify-content-center bd-highlight mb-3 mt-4">
       <div>
         <h2>Books Wiki</h2>
-        <button id="ajaxButton" class="btn btn-dark" type="button">
+        <button id="ajaxButton" class="btn btn-dark w-100" type="button">
           Make a request
         </button>
       </div>
-      <div id="bookList"></div>
     </div>
+    <div
+      id="bookList"
+      class="d-flex flex-row justify-content-center row row-cols-1 row-cols-md-2 g-4"
+    ></div>
   </body>
   <script src="./script.js"></script>
 </html>

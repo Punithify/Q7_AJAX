@@ -16,11 +16,12 @@ function alertContents() {
   if (httpRequest.readyState === XMLHttpRequest.DONE) {
     if (httpRequest.status === 200) {
       const response = JSON.parse(httpRequest.responseText);
+      console.log(response);
       response.map(
         (book) =>
           (document.getElementById(
             'bookList'
-          ).innerHTML += `<div class="card" style="width: 18rem;">
+          ).innerHTML += `<div class="card ml-4" style="width: 18rem;">
       <img src="${book.imageLink}" class="card-img-top" alt="...">
       <div class="card-body">
         <h3>${book.title}</h3>
